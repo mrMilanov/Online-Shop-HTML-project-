@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pics/k.ico">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Kupuvam.bg - Компютри & Периферия</title>
+</head>
+
+<body>
+  <!-- Header1 -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html" id="top">
+				Kupuvam.bg
+          </a>
+		  <ion-icon name="contrast-outline" id="darkbutton" class="darkmode"></ion-icon>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header 1-->
+  
+  
+ <!-- Header2 -->
+  <section id="header2">
+    <div class="header container2">
+		<div class="nav-bar2">
+			<div class="nav-list2">
+				
+				<div class="dropdown">
+					<button class="dropbtn">Категории</button>
+					<div class="dropdown-content">
+						<a href="phones.html">Телефони & Таблети</a>
+						<a href="pc.html">Компютри & Периферия</a>
+						<a href="#">Телевизори</a>
+						<a href="#">Гейминг</a>
+						<a href="#">Електроуреди</a>
+					</div>
+				</div>
+				
+				
+				<div class="search-container">
+				<input type="text" class="search-input" placeholder="Какво търсиш днес?">
+				<button style="border: none; padding:6px; border-radius: 50px;"><img src="pics/search.png" class="searchIMG"></button>
+				</div>
+				
+				
+			</div>
+        </div>
+    </div>
+  </section>
+  <!-- End Header 2-->
+
+<section>
+
+
+
+
+<hr>
+
+
+<div class="grid-container">
+    <a href="#" class="cardLink"><div class="grid-item">
+      <img src="pics/mostra mac.jpg">
+      <p class="description">Лаптоп Apple MacBook Pro 14 (2021),
+	  Apple M1 Pro, RAM 16GB, 512GB SSD, 8 ядра CPU и 14 ядра GPU,
+	  Space Grey, Int KB</p>
+	  <p id="price"><b>3.949<sup>99</sup> лв.</b></p>
+    </div></a>
+	
+	
+    <a href="#" class="cardLink"><div class="grid-item">
+      <img src="pics/mostra asus.jpg">
+      <p class="description">Монитор Gaming ASUS TUF 23.6",
+	  VA, Извит, Full HD, 165Hz, 1ms, Display Port,
+	  FreeSync Premium, Black, VG24VQE</p>
+	  <p id="price"><b>369<sup>99</sup> лв.</b></p>
+    </div></a>
+	
+	
+    <a href="#" class="cardLink"><div class="grid-item">
+      <img src="pics/mostra hdd.jpg">
+      <p class="description">Външен хард диск Seagate One Touch 4TB,
+	  2.5", USB 3.2 Gen 1, Aluminum, Black</p>
+		<p id="price"><b>201<sup>99</sup> лв.</b></p>
+	</div></a>
+	
+  </div>
+  
+
+<center><a href="#"><img src="pics/add.jpg" class="add"></a></center>
+
+	
+<button id="back-to-top" onclick="scrollToTop()"><img src="pics/up.png" id="goback"></button>
+
+
+
+</section>
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+		<div class="brand">
+			<h2>Kupuvam.bg</h2>
+			
+		</div>
+		<div class="fticons">
+		<a href="https://www.unibit.bg"><ion-icon name="location-outline" id="footerIcons"></ion-icon></a>
+		<a href="https://www.unibit.bg"><ion-icon name="mail-outline" id="footerIcons"></ion-icon></a>
+		</div>
+		<h2>+359 88 123 4567</h2>
+		<p>Copyright © 2023. All rights reserved</p>
+		
+		
+    </div>
+  </section>
+  <!-- End Footer -->
+
+</body>
+<!-- Dark Theme js code -->
+<script>
+const body = document.querySelector('body');
+const button = document.querySelector('#darkbutton');
+function toggleDark() {
+  if (body.classList.contains('dark')) {
+    body.classList.remove('dark');
+    localStorage.setItem("theme", "light");
+    button.innerHTML = "Turn on dark mode";
+  } else {
+    body.classList.add('dark');
+    localStorage.setItem("theme", "dark");
+    button.innerHTML = "Turn off dark mode";
+  }
+}
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add('dark');
+  button.innerHTML = "Turn off dark mode";
+}
+document.querySelector('#darkbutton').addEventListener('click', toggleDark);
+</script>
+<!-- End Dark Theme js code -->
+
+<!-- Dark Theme icon -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- End Dark Theme js code -->
+
+
+<!-- Locations and Contact js code -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- End Locations and Contact js code -->
+
+
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 5 seconds
+}
+</script>
+
+
+<!-- go back up -->
+
+<script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      var button = document.getElementById("back-to-top");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+      } else {
+        button.style.display = "none";
+      }
+    }
+
+    function scrollToTop() {
+      var scrollDuration = 300; // Duration of the scroll animation in milliseconds
+      var scrollStep = -window.scrollY / (scrollDuration / 15);
+      var scrollInterval = setInterval(function() {
+        if (window.scrollY !== 0) {
+          window.scrollBy(0, scrollStep);
+        } else {
+          clearInterval(scrollInterval);
+        }
+      }, 15);
+    }
+  </script>
+<!-- End go back up -->
+
+
+
+</html>
+

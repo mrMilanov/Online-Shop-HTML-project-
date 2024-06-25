@@ -1,0 +1,438 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container2 {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* Header section 1 */
+#header {
+	width: 100%;
+	height: auto;
+}
+#header .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+}
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+
+/* End Header section 1 */
+
+
+
+
+
+/* Header section 2 */
+#header2 {
+	width: 100%;
+	height: auto;
+}
+#header2 .header {
+	min-height: 8vh;
+	background-color: rgba(31, 30, 30, 0.24);
+}
+#header2 .nav-bar2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	padding: 0 10px;
+}
+/* End Header section 2*/
+
+
+/* Dropdown Button */
+.dropbtn {
+	font-family: Verdana;
+	font-size:14px;
+	padding:8px;
+	color:black;
+	border-radius:9px;
+	border-color: rgba(31, 30, 30, 0.24);
+	cursor: pointer;
+	box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.2);
+}
+
+/* Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index:100;
+}
+
+/* Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgray;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Vruzki */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:14px;
+}
+
+/* Vruzki:hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	border-radius:8px;
+	margin:0.2px;
+}
+
+/* menu:hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+	border-radius:8px;
+}
+
+/* buton:hover */
+.dropdown:hover .dropbtn {
+	background-color: lightgray;
+	transition:0.2s;
+}
+
+
+
+body {
+	background-color: white;
+}
+body.dark{
+	background-color: #414A4C;
+}
+button{
+	background-color: white;
+	color: black;
+}
+body.dark button{
+	background-color: black;
+	color: white;
+}
+
+#darkbutton{
+	transition:0.25s;
+	width: 30px;
+	height: 30px;
+}
+#darkbutton:hover{
+	cursor:pointer;
+	transition: 0.25s;
+	width:35px;
+	height: 35px;
+}
+
+
+#footerIcons{
+	transition:0.25s;
+	width: 28px;
+	height: 28px;
+}
+
+
+#footerIcons:hover{
+	cursor:pointer;
+	transition: 0.25s;
+	width:31px;
+	height: 31px;
+}
+
+
+#top{
+
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 1000;
+	color:white;
+}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index:80;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#slide{
+	width: 100%;
+	height:auto;
+	border-radius: 1px;
+}
+
+
+
+
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+	  padding:20px;
+    }
+    
+    .grid-item {
+      text-align: center;
+	  padding:20px;
+	  background-color:#D3D3D3;
+	  margin-top:10px;
+	  margin-bottom: 10px;
+	  border-radius: 10px;
+	  transition:0.3s;
+	  word-wrap: break-word;
+    }
+	.grid-item:hover{
+		background-color:#DCDCDC;
+		transition:0.3s;
+	}
+
+    .grid-item img {
+      max-width: 60%;
+      height: auto;
+	  border-radius: 4px;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: center;
+      overflow: auto;
+      max-height: 200px;
+    }
+
+.cardLink{
+	text-decoration:none;
+	color:black;
+}
+
+@media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+#price{
+	color:red;
+	font-size: 18px;
+	padding:10px;
+}
+
+
+
+.image-container{
+	justify-content: space-around;
+	background-color:#DCDCDC;
+}
+
+
+
+.image{
+	max-width:6%;
+	height: auto;
+	margin: 20px;
+	transition: 0.3s;
+}
+.image:hover{
+	transition: 0.3s;
+	background-color:#D3D3D3;
+	border-radius: 4px;
+	padding:2px;
+}
+
+
+#brands{
+	text-decoration:none;
+}
+
+
+.add{
+      max-width: 60%;
+      height: auto;
+	  margin-bottom:10px;
+}
+
+
+
+#back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 16px;
+      background-color: #BEDBED;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 50%;
+    }
+
+
+
+#goback{
+	width: 20px;
+	height:20px;
+}
+
+
+
+
+
+.search-container {
+	height:25px;
+      max-width: 300px;
+	  border: none;
+	  float:right;
+    }
+    
+    .search-input {
+      padding: 10px 40px 10px 10px;
+      border: none;
+	  border-radius: 25px;
+	  margin-left:5px;
+    }
+
+.searchIMG{
+	width:20px;
+	height: 20px;
+	cursor:pointer;
+	transition:0.1s;
+}
+
+.searchIMG:hover{
+	padding:1px;
+	transition:0.1s;
+}
+
+
+
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    bottom: 0;
+}
+#footer .footer {
+	min-height: 300px;
+	flex-direction: column;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+#footer a{
+	text-decoration:none;
+	color:white;
+	
+}
+#footer a:hover{
+	color:green;
+	padding:2px;
+}
+#footer p {
+	color: white;
+	font-size: 1.3rem;
+}
+/* End Footer */
+
+
+@media only screen and (min-width: 768px) {
+	
+	h1.section-title {
+		font-size: 6rem;
+	}
+	
+	/* Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* Section */
+
+	
+}
+
+@media only screen and (min-width: 1200px) {
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
