@@ -1,12 +1,11 @@
 # Online-Shop-HTML-project-
 
-This is one of mine HTML projects.
-I created 3 pages with bunch of "products for sale".
-The project is made, so I can test some things that I learnt, like:
-- "Bring back to the top" buton
-- Dark theme option
-- Slide show
-- There is a search bar, but it doesnt work.
+This is one of my HTML projects, featuring a simple website with three pages showcasing a variety of "products for sale". 
+The primary goal of this project was to practice and experiment with various web development techniques I recently learned.
 
-Again, this website is nothing serious.
-I just decided to upload it here. I will be glad if it is useful to someone :)
+Key Features:
+Back to Top Button: A functional button that scrolls the page back to the top.
+Dark Theme Option: A toggle for switching between light and dark themes.
+Slideshow: A basic image slideshow to display products.
+Search Bar: A search bar is present, but it is non-functional at this stage.
+Please note, this project is purely for practice and not meant to be a fully functional e-commerce site. I’m sharing it here in case anyone finds it useful or helpful for learning purposes :)
